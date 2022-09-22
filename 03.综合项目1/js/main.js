@@ -30,3 +30,7 @@ let getData = function(method,url){
     });
     return promise;
 };
+
+function gotoPage(event){
+    window.location.href = event.target.getAttribute("data-href");
+}
